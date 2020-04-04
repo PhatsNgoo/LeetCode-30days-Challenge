@@ -37,21 +37,20 @@ int Solution::singleNumber(vector<int> &nums)
 
 int Solution::maxSubArray(vector<int> &nums)
 {
+
 	int result = nums[0];
 	int sum = 0;
-	if (nums.size() == 1)
-	{
-		return nums[0];
-	}
+
 	for (int i = 0; i < nums.size(); i++)
 	{
-		sum = 0;
 		sum += nums[i];
-		result = sum > result ? sum : result;
-		for (int j = i + 1; j < nums.size(); j++)
+		if (sum < nums[i])
 		{
-			sum += nums[j];
-			result = sum > result ? sum : result;
+			sum = nums[i];
+		}
+		if (result < sum)
+		{
+			result = sum;
 		}
 	}
 	return result;
