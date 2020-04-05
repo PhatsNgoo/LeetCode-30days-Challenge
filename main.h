@@ -11,4 +11,5 @@ public:
 	int singleNumber(vector<int> &nums);
 	int maxSubArray(vector<int> &nums);
 	void moveZeroes(vector<int> &nums);
+	int maxProfit(vector<int> &prices);
 };

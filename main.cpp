@@ -58,27 +58,45 @@ int Solution::maxSubArray(vector<int> &nums)
 
 void Solution::moveZeroes(vector<int> &nums)
 {
-	int size=nums.size();
-	int index=0;
-	for(int i=0;i<size;i++){
-		if (nums[index]==0)
+	int size = nums.size();
+	int index = 0;
+	for (int i = 0; i < size; i++)
+	{
+		if (nums[index] == 0)
 		{
 			nums.push_back(nums[index]);
-			nums.erase(nums.begin()+index);
+			nums.erase(nums.begin() + index);
 			index--;
 		}
 		index++;
-		
 	}
-	for (int i=0;i<nums.size();i++)
+}
+
+int Solution::maxProfit(vector<int> &prices)
+{
+	if (prices.empty())
 	{
-		std::cout<<nums[i];
+		/* code */
+		return 0;
 	}
 	
+	int profit=0;
+	for (int i=1;i<prices.size();i++)
+	{
+		/* code */
+		if (prices[i]>prices[i-1])
+		{
+			/* code */
+			profit+=prices[i]-prices[i-1];
+		}
+		
+	}
+	return profit;
 }
 int main()
 {
-	vector<int> array = {0,0,0,0,0,0,0,0,0,0,2};
-	solution.moveZeroes(array);
+	vector<int> input = {7,1,5,3,6,4};
+	int profit=solution.maxProfit(input);
+	cout<<profit;
 	return 0;
 }
