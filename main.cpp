@@ -55,10 +55,30 @@ int Solution::maxSubArray(vector<int> &nums)
 	}
 	return result;
 }
+
+void Solution::moveZeroes(vector<int> &nums)
+{
+	int size=nums.size();
+	int index=0;
+	for(int i=0;i<size;i++){
+		if (nums[index]==0)
+		{
+			nums.push_back(nums[index]);
+			nums.erase(nums.begin()+index);
+			index--;
+		}
+		index++;
+		
+	}
+	for (int i=0;i<nums.size();i++)
+	{
+		std::cout<<nums[i];
+	}
+	
+}
 int main()
 {
-	vector<int> array = {-2, 1};
-	int result = solution.maxSubArray(array);
-	std::cout << result;
+	vector<int> array = {0,0,0,0,0,0,0,0,0,0,2};
+	solution.moveZeroes(array);
 	return 0;
 }
