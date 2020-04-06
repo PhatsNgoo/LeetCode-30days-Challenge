@@ -4,6 +4,8 @@
 		"initializer_list": "cpp",
 		"vector": "cpp",
 		"xstring": "cpp",
-		"ostream": "cpp"
+		"ostream": "cpp",
+		"utility": "cpp",
+		"sstream": "cpp"
 	}
 }
