@@ -9,7 +9,7 @@ ListNode *Solution::middleNode(ListNode *head)
 {
 	ListNode *slow=head;
 	ListNode *fast=head;
-	if(fast->next && fast->next->next){
+	while(fast- && fast->next){
 		fast=fast->next->next;
 		slow=slow->next;
 	}
