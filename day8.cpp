@@ -7,24 +7,13 @@
 
 ListNode *Solution::middleNode(ListNode *head)
 {
-	ListNode *node=new ListNode(0);
-	int listCount=0;
-	node->next=head;
-	while (node->next!=NULL)
-	{
-		/* code */
-		listCount++;
-		node=node->next;
+	ListNode *slow=head;
+	ListNode *fast=head;
+	if(fast->next && fast->next->next){
+		fast=fast->next->next;
+		slow=slow->next;
 	}
-	int count;
-	node->next=head;
-	while (count<listCount/2)
-	{
-		/* code */
-		listCount++;
-		node=node->next;
-	}
-	return node->next;
+	return slow;
 }
 Solution solution;
 int main()
