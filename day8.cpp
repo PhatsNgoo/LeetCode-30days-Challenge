@@ -18,7 +18,5 @@ ListNode *Solution::middleNode(ListNode *head)
 Solution solution;
 int main()
 {
-	vector<int> input = {1, 1, 2, 2};
-	cout << solution.countElements(input);
 	return 0;
 }

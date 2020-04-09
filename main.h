@@ -3,9 +3,17 @@
 
 using namespace std;
 
+
+struct ListNode
+{
+	int val;
+	ListNode *next;
+	ListNode(int x) : val(x), next(NULL) {}
+};
 class Solution
 {
 private:
+
 	/* data */
 public:
 	int singleNumber(vector<int> &nums);
@@ -15,10 +23,5 @@ public:
 	vector<vector<string>> groupAnagrams(vector<string> &strs);
 	int countElements(vector<int> &arr);
 	ListNode *middleNode(ListNode *head);
-};
-struct ListNode
-{
-	int val;
-	ListNode *next;
-	ListNode(int x) : val(x), next(NULL) {}
+    bool backspaceCompare(string S, string T);
 };
