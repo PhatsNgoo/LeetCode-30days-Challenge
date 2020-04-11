@@ -3,15 +3,11 @@
 #include <algorithm>
 using namespace std;
 
-int answer;
+int answer = 0;
 int Solution::diameterOfBinaryTree(TreeNode *root)
 {
-	answer = 0;
-	if (root == NULL)
-		return 0;
 	treeHeight(root);
-	cout << answer;
-	return answer - 1;
+	return answer;
 }
 
 int treeHeight(TreeNode *node)
@@ -20,7 +16,7 @@ int treeHeight(TreeNode *node)
 		return 0;
 	int leftDiameter = treeHeight(node->left);
 	int rightDiameter = treeHeight(node->right);
-	answer = max(answer, leftDiameter + rightDiameter + 1);
+	answer = max(answer, leftDiameter + rightDiameter);
 	return max(leftDiameter, rightDiameter) + 1;
 }
 int main()
