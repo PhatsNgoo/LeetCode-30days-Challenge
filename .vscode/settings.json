@@ -6,6 +6,7 @@
 		"xstring": "cpp",
 		"ostream": "cpp",
 		"utility": "cpp",
-		"sstream": "cpp"
+		"sstream": "cpp",
+		"queue": "cpp"
 	}
 }
