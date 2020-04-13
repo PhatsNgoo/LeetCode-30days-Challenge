@@ -31,4 +31,5 @@ public:
 	bool backspaceCompare(string S, string T);
     int diameterOfBinaryTree(TreeNode* root);
 	int lastStoneWeight(vector<int>& stones);
+    int findMaxLength(vector<int>& nums);
 };

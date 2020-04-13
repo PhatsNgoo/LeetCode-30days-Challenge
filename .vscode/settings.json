@@ -7,6 +7,7 @@
 		"ostream": "cpp",
 		"utility": "cpp",
 		"sstream": "cpp",
-		"queue": "cpp"
+		"queue": "cpp",
+		"map": "cpp"
 	}
 }
