@@ -12,7 +12,7 @@ int Solution::countElements(vector<int> &array){
 		mp[i]=i;
 	}
 	for(int i=0;i<array.size();i++){
-		if(mp.find(array[i]+1)->second)
+		if(mp.find(array[i]+1)!=mp.end())
 		{
 			count++;
 		}
