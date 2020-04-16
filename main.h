@@ -34,4 +34,5 @@ public:
     int findMaxLength(vector<int>& nums);
 	string stringShift(string s, vector<vector<int>>& shift);
     vector<int> productExceptSelf(vector<int>& nums) ;
+    bool checkValidString(string s);
 };
