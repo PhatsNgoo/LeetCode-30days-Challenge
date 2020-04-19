@@ -36,4 +36,5 @@ public:
     vector<int> productExceptSelf(vector<int>& nums) ;
     bool checkValidString(string s);
 	int numIslands(vector<vector<char>>& grid);
+    int minPathSum(vector<vector<int>>& grid);
 };
