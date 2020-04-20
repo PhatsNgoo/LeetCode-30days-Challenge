@@ -37,4 +37,5 @@ public:
     bool checkValidString(string s);
 	int numIslands(vector<vector<char>>& grid);
     int minPathSum(vector<vector<int>>& grid);
+    int search(vector<int>& nums, int target);
 };
