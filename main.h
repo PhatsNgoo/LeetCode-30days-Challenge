@@ -46,6 +46,7 @@ public:
 	int search(vector<int> &nums, int target);
 	TreeNode *bstFromPreorder(vector<int> &preorder);
 	int leftMostColumnWithOne(BinaryMatrix &binaryMatrix);
+	int subarraySum(vector<int>& nums, int k);
 };
 /*
 [
